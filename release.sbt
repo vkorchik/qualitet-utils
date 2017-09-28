@@ -29,7 +29,7 @@ TravisCredentials.updateCredentials()
 pomExtra in Global := {
   <scm>
     <connection>scm:git:github.com/vkorchik/qualitet-utils.git</connection>
-    <developerConnection>scm:git:git@github.com:vkrochik/qualitet-utils.git</developerConnection>
+    <developerConnection>scm:git:git@github.com:vkorchik/qualitet-utils.git</developerConnection>
     <url>github.com/vkorchik/qualitet-utils.git</url>
   </scm>
     <developers>
