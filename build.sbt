@@ -38,3 +38,22 @@ releaseProcess := Seq[ReleaseStep](
   pushChanges,
   releaseStepCommandAndRemaining("sonatypeReleasesAll")
 )
+
+useGpg := true
+
+TravisCredentials.updateCredentials()
+
+pomExtra in Global := {
+  <scm>
+    <connection>scm:git:github.com/vkorchik/qualitet-utils.git</connection>
+    <developerConnection>scm:git:git@github.com:vkrochik/qualitet-utils.git</developerConnection>
+    <url>github.com/vkorchik/qualitet-utils.git</url>
+  </scm>
+    <developers>
+      <developer>
+        <id>vkorchik</id>
+        <name>Vladimir KORCHIK</name>
+        <url>https://github.com/vkorchik</url>
+      </developer>
+    </developers>
+}
