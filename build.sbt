@@ -35,8 +35,8 @@ releaseProcess := Seq[ReleaseStep](
   releaseStepCommandAndRemaining("+publishSigned"),
   setNextVersion,
   commitNextVersion,
-  pushChanges,
-  releaseStepCommandAndRemaining("sonatypeReleasesAll")
+  releaseStepCommandAndRemaining("sonatypeReleasesAll"),
+  pushChanges
 )
 
 //useGpg := true
