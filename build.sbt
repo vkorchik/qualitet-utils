@@ -39,7 +39,7 @@ releaseProcess := Seq[ReleaseStep](
   releaseStepCommandAndRemaining("sonatypeReleasesAll")
 )
 
-useGpg := true
+//useGpg := true
 
 TravisCredentials.updateCredentials()
 
