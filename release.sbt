@@ -24,35 +24,35 @@ releaseCommitMessage := s"Set version to ${(version in ThisBuild).value}"
 licenses := Seq("Mozilla Public License, version 2.0" -> url("https://www.mozilla.org/MPL/2.0/"))
 homepage := Some(url("https://github.com/vkorchik/qualitet-utils"))
 
-scmInfo := Some(ScmInfo(
-  url("https://github.com/vkorchik/qualitet-utils"),
-  "scm:git@github.com/vkorchik/qualitet-utils.git"
-))
-
-developers := List(
-  Developer(
-    id    = "vkorchik",
-    name  = "Vladimir KORCHIK",
-    email = "vagenius23@gmail.com",
-    url   = url("https://github.com/vkorchik")
-  )
-)
-
-
-//pomExtra in Global := {
-//  <scm>
-//    <connection>scm:git:github.com/vkorchik/qualitet-utils.git</connection>
-//    <developerConnection>scm:git:git@github.com:vkorchik/qualitet-utils.git</developerConnection>
-//    <url>github.com/vkorchik/qualitet-utils.git</url>
-//  </scm>
-//    <developers>
-//      <developer>
-//        <id>vkorchik</id>
-//        <name>Vladimir KORCHIK</name>
-//        <url>https://github.com/vkorchik</url>
-//      </developer>
-//    </developers>
-//}
+//scmInfo := Some(ScmInfo(
+//  url("https://github.com/vkorchik/qualitet-utils"),
+//  "scm:git@github.com/vkorchik/qualitet-utils.git"
+//))
+//
+//developers := List(
+//  Developer(
+//    id    = "vkorchik",
+//    name  = "Vladimir KORCHIK",
+//    email = "vagenius23@gmail.com",
+//    url   = url("https://github.com/vkorchik")
+//  )
+//)
+//
+//
+pomExtra in Global := {
+  <scm>
+    <connection>scm:git:github.com/vkorchik/qualitet-utils.git</connection>
+    <developerConnection>scm:git:git@github.com:vkorchik/qualitet-utils.git</developerConnection>
+    <url>github.com/vkorchik/qualitet-utils.git</url>
+  </scm>
+    <developers>
+      <developer>
+        <id>vkorchik</id>
+        <name>Vladimir KORCHIK</name>
+        <url>https://github.com/vkorchik</url>
+      </developer>
+    </developers>
+}
 
 releaseProcess := Seq[ReleaseStep](
   checkSnapshotDependencies,
