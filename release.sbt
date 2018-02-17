@@ -24,9 +24,10 @@ releaseCommitMessage := s"Set version to ${(version in ThisBuild).value}"
 licenses := Seq("Mozilla Public License, version 2.0" -> url("https://www.mozilla.org/MPL/2.0/"))
 homepage := Some(url("https://github.com/vkorchik/qualitet-utils"))
 
-scmInfo := homepage.value.map { hpUrl =>
-  ScmInfo(hpUrl, "scm:git@github.com/vkorchik/qualitet-utils.git")
-}
+scmInfo := Some(ScmInfo(
+  url("https://github.com/vkorchik/qualitet-utils"),
+  "scm:git@github.com/vkorchik/qualitet-utils.git"
+))
 
 developers := List(
   Developer(
