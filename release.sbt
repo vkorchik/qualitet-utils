@@ -61,7 +61,7 @@ releaseProcess := Seq[ReleaseStep](
   runTest,
   setReleaseVersion,
   commitReleaseVersion,
-  tagRelease,
+//  tagRelease,
   releaseStepCommandAndRemaining("+publishSigned"),
   setNextVersion,
   commitNextVersion,
